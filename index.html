@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PPDB ESEMKADA</title>
+    <!-- link bootstrap -->
+    <link href="bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- link style css -->
+    <!-- <link rel="stylesheet" href="home.css" /> -->
+    <!-- link animated css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      /* background-color: aqua; */
+      /* min-height: 2000px; */
+      background-image: url(img/bg.jpg);
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+    .navbar-brand {
+      background-color: orange;
+      color: white;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 40px;
+      margin-left: 20px;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+    }
+
+    .navbar-brand:hover {
+      color: rgb(56, 54, 54);
+    }
+
+    .collapse {
+      margin-left: px;
+    }
+
+    .content {
+      height: 100vh;
+      /* background-image: url(img/bg.jpg); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .title-bg h4 {
+      background-color: orange;
+      padding: 10px;
+      border-radius: 50px;
+    }
+
+    /* highlight */
+    .text {
+      background: right / 0% 100% no-repeat linear-gradient(orange, #dfd7e9);
+      transition: background-size 500ms;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .text:hover {
+      background: left / 100% 100% no-repeat linear-gradient(orange, #dfd7e9);
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: rgb(197, 192, 192);
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+  <body id="home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="img/logo sekolah.png" alt="" width="40px" />
+          <a class="navbar-brand" href="1_home.html">PPDB ESEMKADA</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="2_ketentuan.html"
+                >Ketentuan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="2_ketentuan.html">Prosedur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="from.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <marquee behavior="" direction="" class=""
+          >Terima Kasih Atas Partisipasi Anda 😊</marquee
+        >
+      </div>
+    </nav>
+
+    <div class="container content">
+      <div class="title text-center mb-3">
+        <h1
+          class="text animate__animated animate__backInDown"
+          style="font-size: 3rem"
+        >
+          Selamat Datang Di PPDB 2023
+        </h1>
+        <h5 class="text-muted animate__animated animate__fadeInUp">
+          Daftar peserta didik baru secara online sekarang juga!
+        </h5>
+      </div>
+      <div class="title-bg">
+        <h4 class="h4 text-center animate__animated animate__backInUp">
+          WUJUDKAN INDONESIA MAJU
+        </h4>
+      </div>
+    </div>
+
+    <div class="container-fluid content-2">
+      <div class="alert alert-success p-4" role="alert">
+        <h2 class="alert-heading text-md-center">Panduan PPDB 2023</h2>
+        <p class="text-md-center">
+          Ayo ikuti dan pahami panduan dengan cermat dan teliti!
+        </p>
+        <hr />
+        <div class="alert alert-primary" role="alert">
+          1. Ketentuan PPDB
+          <a href="2_ketentuan.html" style="margin-left: 10px"
+            ><button class="bg-info p-2 rounded-5">Baca Ketentuan</button>
+          </a>
+        </div>
+        <div class="alert alert-secondary" role="alert">
+          2. Verifikasi Raport
+        </div>
+        <div class="alert alert-success" role="alert">3. Pengambilan PIN</div>
+        <div class="alert alert-danger" role="alert">4. Pendaftaran PPDB</div>
+      </div>
+    </div>
+
+    <!-- panduan -->
+    <div class="container-fluid content-3 mt-4">
+      <div class="artikel alert alert-success p-4">
+        <div class="row gy-1">
+          <div class="col-md-12">
+            <h2 class="alert-heading text-md-center">
+              Jalur Pendaftaran PPDB 2023
+            </h2>
+            <p class="text-md-center">
+              Terdapat beberapa Jalur PPBD yang dapat kamu pilih. <br />
+              Tersedia :
+            </p>
+            <hr />
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4 alert alert-secondary">
+            <h5 class="text-center">Terdapat 5 Jalur Pilihan</h5>
+            <p class="text-center">
+              Jalur Afirmasi, Perpindahan Tugas, Prestasi Hasil Lomba, Prestasi
+              Nilai Akademik, dan Jalur Zonasi.
+            </p>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4 alert alert-secondary">
+            <h5 class="text-center">2 Jenjang Sekolah</h5>
+            <p class="text-center">
+              SMA(Sekolah Menengah Atas) <br />
+              SMK(Sekolah Menengah Kejuruan)
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h5>Created by | Ifan Tri Julian Maulana</h5>
+      <h6>&COPY;2023 PPDB ESEMKADA</h6>
+    </footer>
+
+    <script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<!-- dibuat pada 4 November 2023 pukul 09.00 PM -->
+<!-- ingat yang mahal itu ilmunya bukan copasnya -->
+<!-- mikir konsep dan desain bukan hal yang mudah -->
+<!-- ifan tri julian maulana -->

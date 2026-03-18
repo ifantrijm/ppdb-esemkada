@@ -1,0 +1,252 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: aqua; */
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.navbar-brand {
+  background-color: orange;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 40px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.collapse {
+  margin-left: px;
+}
+
+section {
+  width: 100%;
+}
+
+/* content */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+
+}
+
+.prolog {
+  font-size: 500px;
+}
+.prolog h1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+.prolog-img {
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content img {
+}
+
+/* content 2 */
+.content-2 {
+  background-color: aqua;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.prolog-2 {
+  margin: 50px;
+}
+.prolog-2 p {
+  font-size: 20px;
+  margin-top: -10px;
+}
+.prolog-2-img {
+}
+.prolog-2-img img {
+  width: 250px;
+  height: 300px;
+}
+
+/* content 3 */
+.content-3 {
+  background-color: darkgray;
+}
+
+.prolog-3 {
+  padding: 10px 10px;
+}
+span {
+}
+
+footer {
+  background-color: rgb(131, 188, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* responsive mobile*/
+@media (max-width: 450px) {
+  .home {
+    margin-top:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .prolog-2 {
+    margin: 20px;
+  }
+  .prolog h1 {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .prolog h3 {
+    font-size: 22px;
+  }
+  .prolog-img {
+    display: flex;
+    justify-content: center;
+  }
+  .content img {
+    width: 100%;
+  }
+
+  /* content 2 */
+  .content-2 {
+    background-color: rgb(148, 46, 185);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .prolog-2{
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+  }
+  .prolog-2-img img {
+    width: 250px;
+    height: 300px;
+  }
+  .prolog-2 h1{
+    font-size: 2.5rem;
+
+  }
+  .prolog-2 h4{
+    font-size: 1.9rem;
+  }
+  .prolog-2 p{
+    font-size: 25px;
+  }
+
+  /* content 3 */
+  .prolog-3 h4{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .prolog-3 p{
+    font-size: 20px;
+  }
+}
+
+/* responsive tablet*/
+@media (max-width:) {
+  .home {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .prolog-2 {
+    margin: 20px;
+  }
+  .prolog h1 {
+    font-weight: 700;
+    font-size: 4.5rem;
+  }
+  .prolog h3 {
+    font-size: 35px;
+  }
+  .prolog-img {
+    display: flex;
+    justify-content: center;
+  }
+  .content img {
+    width: 100%;
+  }
+
+  /* content 2 */
+  .content-2 {
+    background-color: rgb(148, 46, 185);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .prolog-2 h1{
+    font-size: 4rem;
+  }
+  .prolog-2 h4{
+    font-size: 3rem;
+  }
+  .prolog-2 p{
+    font-size: 1.8rem;
+    text-align:left ;
+  }
+  .prolog-2-img img {
+    width: 250px;
+    height: 300px;
+  }
+}

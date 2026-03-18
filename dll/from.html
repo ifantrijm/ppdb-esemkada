@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PPDB ESEMKADA</title>
+    <link href="bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="" />
+    <style>
+      *,
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* padding: 10px; */
+        background-image: url(img/bg.jpg);
+      }
+      .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+      }
+      .navbar-brand {
+        font-weight: 700;
+        background-color: orange;
+        color: white;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 40px;
+        margin-left: 20px;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      span {
+        color: red;
+      }
+
+      footer {
+        background-color: rgb(197, 192, 192);
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="img/logo sekolah.png" alt="" width="40px" />
+          <a class="navbar-brand" href="1_home.html">PPDB ESEMKADA</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="2_ketentuan.html"
+                >Ketentuan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="3_prosedur.html">Prosedur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="from.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <marquee behavior="" direction="" class=""
+          >Terima Kasih Atas Partisipasi Anda 😊</marquee
+        >
+      </div>
+    </nav>
+    <br />
+    <div    aria-label="breadcrumb"  class="ms-md-3 mt-md-5"   style="margin-top: 75px"  >
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="1_home.html">Dasboard</a></li>
+        <li class="breadcrumb-item"><a href="#">Formulir</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </div>
+
+    <!-- content -->
+    <div class="container alert alert-info p-10">
+      <h2 class="alert alert-primary text-center mt-3">
+        FORMULIR PENDAFTARAN MAHASISWA BARU
+      </h2>
+      <form action="" method="POST">
+        <h4 class="">IDENTITAS CALON SISWA</h4>
+        <div class="form-group">
+          <label for="">Nama Lengkap<span>*</span></label>
+          <input  type="text" name="name" class="form-control"  placeholder="Masukkan Nama Lengkap Anda" />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">NISN<span>*</span></label>
+          <input type="number" name="nisn" class="form-control" />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">NIK<span>*</span></label>
+          <input type="number" name="nik" class="form-control" />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">Agama<span>*</span></label>
+          <select class="form-control" name="agama">
+            <option value=""></option>
+            <option value="Islam">Islam</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">Email<span>*</span></label>
+          <input    type="email" name="email" class="form-control" placeholder="Masukkan Nama Lengkap Anda"   />
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">Password<span>*</span></label>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Masukkan Nama Lengkap Anda"
+          />
+          <small
+            >Password harus terdiri dari angka dan huruf minimal 6
+            karakter</small
+          >
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Tempat Lahir<span>*</span></label>
+              <input
+                type="text"
+                name="tmp_lahir"
+                class="form-control"
+                placeholder="Masukkan Tempat Lahir Anda"
+                id="TempatLahir"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Tanggal Lahir<span>*</span></label>
+              <input
+                type="date"
+                name="tgl_lahir"
+                class="form-control"
+                placeholder="Masukkan Tempat Lahir Anda"
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">Pilih Jurusan<span>*</span></label>
+          <select class="form-control" name="jurusan">
+            <option value=""></option>
+            <option value="1. Teknit Informatika">1. Teknit Informatika</option>
+            <option value="2. Rekayasa Perangkat Lunak">2. Rekayasa Perangkat Lunak</option>
+            <option value="3. Teknik Elektronika Induatri">3. Teknik Elektronika Induatri</option>
+            <option value="4. Teknik Kendaraaan Ringan">4. Teknik Kendaraaan Ringan</option>
+            <option value="5. Teknik Kendaraaan Otomotif">5. Teknik Kendaraaan Otomotif</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">Alasan Daftar Disekolah Ini<span>*</span></label
+          ><br />
+          <textarea name="textarea" class="form-control" rows="5"></textarea>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">Jenis Kelamin<span>*</span></label
+          ><br />
+          <div class="form-check-inline">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="radio1"
+              id="radio2"
+              checked=""
+            />
+            <label for="radio2">Laki-laki</label>
+          </div>
+          <div class="form-check-inline">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="radio1"
+              id="radio3"
+              checked=""
+            />
+            <label for="radio3">Perempuan</label>
+          </div>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <label for="">Upload PAs Foto</label>
+          <input type="file" class="form-control-file" name="" /><br />
+          <small>Upload file dengan ukuran maksimal 12Mb</small>
+        </div>
+        <br />
+        <hr />
+        <br />
+
+        <!-- Orang Tua -->
+        <h4>IDENTITAS ORANG TUA</h4>
+        <div class="form-group">
+          <label for="">Nama Ayah<span>*</span></label>
+          <input type="text" class="form-control" name="" id="" />
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Tempat Lahir</label>
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Tanggal Lahir</label>
+              <input type="date" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Pekerjaan Ayah</label>
+              <input type="text" class="form-control" />
+            </div>
+            <br />
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Penghasilan Ayah</label>
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Alamat Ayah</label>
+          <textarea name="" class="form-control" rows="4"></textarea>
+        </div>
+        <br />
+        <!-- ibu -->
+        <div class="form-group">
+          <label for="">Nama Ibu<span>*</span></label>
+          <input type="text" class="form-control" name="" id="" />
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Tempat Lahir</label>
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Tanggal Lahir</label>
+              <input type="date" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Pekerjaan Ibu</label>
+              <input type="text" class="form-control" />
+            </div>
+            <br />
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Penghasilan Ibu</label>
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Alamat Ibu</label>
+          <textarea name="" class="form-control" rows="4"></textarea>
+        </div>
+        <br />
+
+        <button type="submit" class="btn btn-primary">Kirim Formulir</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </form>
+      <br />
+      <div
+        class="form-group"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <h3>Trimkasih Atas Partisipasi Anda🙏</h3>
+      </div>
+    </div>
+
+    <footer>
+      <h5>Created by | Ifan Tri Julian Maulana</h5>
+      <h6>&COPY;2023 PPDB ESEMKADA</h6>
+    </footer>
+
+    <script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<!-- dibuat pada 4 November 2023 pukul 09.00 PM -->
+<!-- dibuat pada 4 November 2023 pukul 09.00 PM -->
+<!-- ingat yang mahal itu ilmunya bukan copasnya -->
+<!-- mikir konsep dan desain bukan hal yang mudah -->
+<!-- ifan tri julian maulana -->
