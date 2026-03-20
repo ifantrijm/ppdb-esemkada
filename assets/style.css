@@ -1,0 +1,80 @@
+   *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      /* background-color: aqua; */
+      /* min-height: 2000px; */
+      background-image: url(img/bg.jpg);
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+    .navbar-brand {
+      background-color: orange;
+      color: white;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 40px;
+      margin-left: 20px;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+    }
+
+    .navbar-brand:hover {
+      color: rgb(56, 54, 54);
+    }
+
+    .collapse {
+      margin-left: px;
+    }
+
+    .content {
+      height: 100vh;
+      /* background-image: url(img/bg.jpg); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .title-bg h4 {
+      background-color: orange;
+      padding: 10px;
+      border-radius: 50px;
+    }
+
+    /* highlight */
+    .text {
+      background: right / 0% 100% no-repeat linear-gradient(orange, #dfd7e9);
+      transition: background-size 500ms;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .text:hover {
+      background: left / 100% 100% no-repeat linear-gradient(orange, #dfd7e9);
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: rgb(197, 192, 192);
+      padding: 15px;
+      text-align: center;
+    }
